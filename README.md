@@ -1,4 +1,9 @@
 
+## Quick start (after installation)
+`conda activate genie`
+`genie`
+
+
 ## Installation
 1. install anaconda 
 2. create a new enviornment with python 3.7 and docopt
