@@ -1,7 +1,9 @@
 
 ## Quick start (after installation)
-`conda activate genie`
-`genie`
+```
+conda activate genie
+genie
+```
 
 
 ## Installation
