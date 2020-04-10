@@ -1,0 +1,1 @@
+../../../software/PrediXcan/PrediXcan.py

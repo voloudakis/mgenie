@@ -1,6 +1,6 @@
 [
   {
-      "plink":"/Users/veera/Research/plink/plink",
+      "plink":"plink",
       "bcftools":"bcftools",
       "bgzip":"bgzip",
       "tabix":"tabix",
@@ -8,6 +8,6 @@
       "Rscript":"Rscript",
       "tabix":"tabix",
       "magma":"magma",
-      "plink2":"/Users/veera/Research/softwares/plink2/plink2"
+      "plink2":"plink2"
   }
 ]
