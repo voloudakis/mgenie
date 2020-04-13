@@ -1,10 +1,13 @@
+###############################################################
+# GENERATE THE CORRELATION MATRICES FOR THE POLYXCAN APPROACH #
+###############################################################
 
+#################################
+# STEP 1 PREDICT ALL THE FEATURES 
+# for 503 EUR from 1kg
 
-
-# Prototyping - Compare mgenie with predixcan results
-
-
-## PrediXcan method
+The genotype files are generated with the following settings (MAF > 0.01, bi allelic, no indels, only non-ambguous (A/T G/C), only with RS ids)
+We are using the PrediXcan method for prediction (--predict)
 ```
 cd /sc/hydra/projects/va-biobank/resources/genie-resources/polyxcan/test
 conda activate py2
@@ -18,8 +21,21 @@ python /sc/hydra/projects/va-biobank/resources/genie-resources/software/PrediXca
 
 #   --genelist /sc/hydra/projects/va-biobank/resources/genie-resources/polyxcan/test/testgenes \
 ```
+Our wrapper can be found in:
 
-## mgenie method
+
+#######################################################################################
+# STEP 2 GENERATE CORRELATION MATRICES FOR THE SUMMARIZATION AT THE GENE LEVEL APPROACH
+
+
+
+#######################################################################################
+# STEP 3 GENERATE CORRELATION MATRICES FOR THE SUMMARIZATION AT THE PEAK LEVEL APPROACH
+
+
+
+
+## mgenie method was not used
 ```
 cd /sc/hydra/projects/va-biobank/resources/genie-resources/polyxcan/test_mgenie/
 conda activate genie
