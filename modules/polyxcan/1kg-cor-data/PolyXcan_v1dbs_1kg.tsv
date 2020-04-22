@@ -1,6 +1,6 @@
 name	value
-dosages	/sc/hydra/projects/va-biobank/resources/genie-resources/qc-dna/1000g
-dosages_prefix	1kg..eur.biallele.snps.maf0.01.nonAmbi.onlyRs.recode.chr
+dosages	/sc/hydra/projects/va-biobank/resources/genie-resources/qc-dna/1000g/1kg.EUR.dosages
+dosages_prefix	1kg.eur.biallele.snps.maf0.01.nonAmbi.onlyRs.recode.chr
 samples	/sc/hydra/projects/va-biobank/resources/genie-resources/qc-dna/1000g/1kg..eur.biallele.snps.maf0.01.nonAmbi.onlyRs.recode.chr.nosex
 weights	/sc/hydra/projects/va-biobank/resources/genie-resources/polyxcan/v1.dbs
 output_prefix_folder	/sc/hydra/projects/va-biobank/resources/genie-resources/polyxcan/test/results/

@@ -1,10 +1,13 @@
-###############################################################
-# GENERATE THE CORRELATION MATRICES FOR THE POLYXCAN APPROACH #
-###############################################################
+# GENERATE THE CORRELATION MATRICES FOR THE POLYXCAN APPROACH 
+Requires:
+- genotypes in PLINK format (step 0 can convert them to dosage files)
+- db files
 
-#################################
-# STEP 1 PREDICT ALL THE FEATURES 
-# for 503 EUR from 1kg
+## STEP 0 DO NOT TRUST THE GENOTYPE FILES
+Never trust the genotype files e.g. ensure that MAF > 0.01 
+
+## STEP 1 PREDICT ALL THE FEATURES 
+for 503 EUR from 1kg
 
 The genotype files are generated with the following settings (MAF > 0.01, bi allelic, no indels, only non-ambguous (A/T G/C), only with RS ids)
 We are using the PrediXcan method for prediction (--predict)
@@ -21,21 +24,17 @@ python /sc/hydra/projects/va-biobank/resources/genie-resources/software/PrediXca
 
 #   --genelist /sc/hydra/projects/va-biobank/resources/genie-resources/polyxcan/test/testgenes \
 ```
-Our wrapper can be found in:
+Main script is `01_predict_features.R`
 
 
-#######################################################################################
-# STEP 2 GENERATE CORRELATION MATRICES FOR THE SUMMARIZATION AT THE GENE LEVEL APPROACH
+## STEP 2 GENERATE CORRELATION MATRICES FOR THE SUMMARIZATION AT THE GENE LEVEL APPROACH
 
 
-
-#######################################################################################
-# STEP 3 GENERATE CORRELATION MATRICES FOR THE SUMMARIZATION AT THE PEAK LEVEL APPROACH
+## STEP 3 GENERATE CORRELATION MATRICES FOR THE SUMMARIZATION AT THE PEAK LEVEL APPROACH
 
 
-
-
-## mgenie method was not used
+**mgenie method was not used**
+Requires generation of genelists
 ```
 cd /sc/hydra/projects/va-biobank/resources/genie-resources/polyxcan/test_mgenie/
 conda activate genie
@@ -45,7 +44,7 @@ genie predixcan predict \
 ```  
 
 
-
+```
 please check here:
 8:11
 /sc/hydra/projects/roussp01a/Wen/ATAC_seq/
@@ -57,7 +56,7 @@ is the capstone RNAseq
 PEC_Transcript/scripts/  stores isoform of capstone
 
 ATAC: Crawford.ATAC.false/scripts/  chipseq: ` Chip_seq/scripts/`
-
+```
 
 
 
